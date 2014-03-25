@@ -32,18 +32,18 @@ function getFormDataForPost(fields, files) {
   if (fields) {
     for (var key in fields) {
       var value = fields[key]
-      postData.push(new Buffer(encodeFieldPart(boundary, key, value), 'ascii'))
+      postData.push(new Buffer(encodeFieldPart(boundary, key, value), 'utf8'))
     }
   }
   if (files) {
     for (var key in files) {
       var value = files[key]
-      postData.push(new Buffer(encodeFilePart(boundary, value.type, value.keyname, value.valuename), 'ascii'))
+      postData.push(new Buffer(encodeFilePart(boundary, value.type, value.keyname, value.valuename), 'utf8'))
 
       postData.push(new Buffer(value.data, 'utf8'))
     }
   }
-  postData.push(new Buffer("\r\n--" + boundary + "--"), 'ascii')
+  postData.push(new Buffer("\r\n--" + boundary + "--"), 'utf8')
   var length = 0
 
   for(var i = 0; i < postData.length; i++) {
@@ -146,4 +146,3 @@ var interface = {
 }
 
 module.exports = interface
-
