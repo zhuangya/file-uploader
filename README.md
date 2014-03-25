@@ -1,8 +1,8 @@
-[![build status](https://secure.travis-ci.org/timoxley/file-uploader.png)](http://travis-ci.org/timoxley/file-uploader)
+[![build status](https://secure.travis-ci.org/JimuBox/file-uploader.png)](http://travis-ci.org/JimuBox/file-uploader)
 # File Uploader
 
 This module allows you to easily test the file uploading capabilities of
-your API by allowing you to perform a multipart file upload programmatically. 
+your API by allowing you to perform a multipart file upload programmatically.
 
 ## Usage
 
