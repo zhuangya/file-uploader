@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "step": "0.0.5",
-    "mime": "~1.2.4"
+    "mime": "~1.4.1"
   },
   "devDependencies": {
     "chai": "~0.1.6",
